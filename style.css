@@ -152,7 +152,7 @@ span {
 section {
   width: 100%;
   height: auto;
-  margin-bottom: 8em;
+  margin-bottom: 10rem;
 }
 
 section:last-child {
@@ -164,7 +164,7 @@ h3 {
 }
 
 .navtitles {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   line-height: 1rem;
   font-size: 0rem;
   color: var(--invisible);
