@@ -1,0 +1,248 @@
+/* 
+Palette?
+#0d7377
+#ffffff
+#129fa5
+#084749
+#e6e6e6
+#17ccd3
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #0b090e;
+  --black-grey: #212121;
+  --med-grey: #4b545d;
+  --brown-grey: #898584;
+  --violet: #483d51;
+  --light-violet: #5B4969;
+  --light-grey: #9ba2ab;
+  --red: #ae4735;
+  --white: #f2fcf8;
+  --white-bg: rgba(242,252,248, .3);
+  --petrol: #328a94;
+  --blue: #082638;
+  --blue-bg: rgba(8,38,56, .3);
+  --yellow: #f6df51;
+  --green-light: #4D6E4F;
+  --invisible: rgba(255, 255, 255, 0)
+}
+
+html {
+  font-size: 62.5%;
+  font-family: arial, 'FontAwesome';
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: url(./images/trainlights.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 100%;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  border: 2px solid var(--light-grey);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin: 1.5rem;
+  white-space: nowrap;
+  
+}
+
+#logo div:first-child {
+  border-bottom: 2px solid var(--light-grey);
+  color: var(--red);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.2rem;
+  text-align: end;
+  padding-right: 0.3rem;
+  padding-bottom: 0.2rem;
+}
+
+#logo div:nth-child(2) {
+  color: var(--petrol);
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0.2rem 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  margin: 1.5rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--white);
+  text-transform: lowercase;
+}
+
+nav ul li a:hover {
+  color: var(--white);
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--yellow);
+  box-shadow: var(--yellow) -3px -3px 20px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+
+.content {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 50vh;
+    border-radius: 2rem;
+    padding: 4rem;
+    font-size: 1.6rem;
+    background-color: var(--blue-bg);
+    color: var(--white);
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+ 
+}
+
+
+.content::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+
+.navtitles {
+    padding-bottom: 2rem;
+    line-height: 1rem;
+    font-size: 0rem;
+    color: var(--invisible);
+
+}
+
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    
+}
+
+/* .skills > * {
+    cursor: pointer;
+} */
+
+.button {
+    border-radius: 50%;
+    border-color: var(--black-grey);
+    padding: .5rem;
+    margin: .5rem;
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--petrol);
+    color: var(--white);
+    box-shadow: 2px 2px  rgba(0,0,0,0.6);
+    
+}
+
+.button:hover,
+.next .button:hover {
+    cursor: default;
+}
+
+.next .button{
+    background-color: var(--med-grey);
+}
+
+.button p {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+i {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+
+span {
+    color: var(--petrol);
+}
+
+/* #about,
+#projects,
+#contact {
+    height: 100%;
+    padding-top: 5rem;
+} */
+
+section {
+    height: 100%;
+    margin-bottom: 3rem;
+}
+
+
+
+/* tablet */
+@media screen and (min-width: ) {
+
+
+}
+
+/* desktop */
+@media screen (min-width: ) {
+  /* main {
+    display: flex;
+    flex-direction: row;
+  } 
+
+
+  
+  
+  */
+}

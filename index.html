@@ -21,9 +21,9 @@
     />
   </head>
   <body>
-<!-- don't forget return to top arrows -->
+    <!-- don't forget return to top arrows -->
 
-<!-- 
+    <!-- 
   -Fixed header with 'logo' '< SC >'
   maybe with borders that look like a little window? 
 
@@ -31,67 +31,114 @@
 -->
 
     <header>
+      <div id="logo">
+        <div>x</div>
+        <div>< SC ></div>
+      </div>
+
+      <!-- bootstrap dropdown for mobile ver under 400px width? -->
+
       <nav>
         <ul>
           <li>
-            <a href="#"> About </a>
+            <a href="#about" class="nav"> About </a>
           </li>
           <li>
-            <a href="#"> Projects </a>
+            <a href="#projects" class="nav"> Projects </a>
           </li>
           <li>
-            <a href="#"> Contact </a>
+            <a href="#contact" class="nav"> Contact </a>
           </li>
         </ul>
       </nav>
     </header>
 
-<!-- 
-  -HERO SECTION? with scroll down arrow & some visual interest thing 
-  
-  -"Hello, my name is Sami. I'm a web developer based in Berlin and I'm still learning the ropes. So far I've gotten or am getting the hang of (add buttons for): HTML, CSS, Bootstrap, SASS/SCSS, Git, github, vscode? 
-  Next I'll be learning _______(add list or grayed out tiles/buttons here)"
+    <!-- 
+   
   
   -resume pdf link?
 -->
 
-    <main>
-      <section>
-
-      </section>
-
-<!-- 
-  -"Some of my work:"
-  -project screenshots showing responsiveness 
--->
+    <main class="content">
+      <h2 id="about" class="navtitles">about</h2>
 
       <section>
+        <h3>Hi, I'm <span>Sami</span>.</h3>
+        <p>I'm a Berlin based web-developer in training.</p>
+        <p>So far I'm getting the hang of:</p>
 
+        <div class="skills">
+          <button class="button">
+            <i class="fa-brands fa-html5"></i>
+
+            <p>HTML</p>
+          </button>
+
+          <button class="button">
+            <i class="fa-brands fa-css3"></i>
+            <p>CSS</p>
+          </button>
+
+          <button class="button">
+            <i class="fa-brands fa-bootstrap"></i>
+            <p>Bootstrap</p>
+          </button>
+
+          <button class="button">
+            <i class="fa-brands fa-sass"></i>
+            <p>Sass</p>
+          </button>
+
+          <button class="button">
+            <i class="fa-brands fa-github"></i>
+            <p>GitHub</p>
+          </button>
+
+          <button class="button">
+            <i class="fa-brands fa-git"></i>
+            <p>Git</p>
+          </button>
+        </div>
+
+        <p>Next, I'll be figuring out:</p>
+
+        <div class="skills next">
+          <button class="button">
+            <i class="fa-brands fa-js"></i>
+            <p>JS</p>
+          </button>
+        </div>
       </section>
 
-<!-- 
-  -bottom section with contact form & social media links
-  -background of berlin map
--->
+      <!-- 
+    -"Some of my work:"
+    -project screenshots 
+  -->
 
-      <section>
-        
-      </section>
+      <h2 id="projects" class="navtitles">projects</h2>
+      <section id="projects">Projects</section>
 
+      <!-- 
+    -bottom section with contact form & social media links ex:
+    linkedin 
+    twitter 
+    github 
+    stackoverflow
+    -background of berlin map in form bg?
+  -->
+
+      <h2 id="contact" class="navtitles">contact</h2>
+
+      <section id="contact">contact</section>
     </main>
 
-
-  <footer>
-
-<!-- 
+    <footer>
+      <!-- 
   footer with copyright by me 2022 or whatever 
 -->
 
-    <p>
-
-    </p>
-
-  </footer>
+      <p></p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
