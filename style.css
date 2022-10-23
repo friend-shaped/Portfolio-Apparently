@@ -170,6 +170,10 @@ h3 {
   color: var(--invisible);
 }
 
+#about {
+  margin-top: 3rem;  
+}
+
 .skills {
   display: flex;
   justify-content: space-evenly;
