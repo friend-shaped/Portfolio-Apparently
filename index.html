@@ -21,15 +21,6 @@
     />
   </head>
   <body>
-    <!-- don't forget return to top arrows -->
-
-    <!-- 
-  -Fixed header with 'logo' '< SC >'
-  maybe with borders that look like a little window? 
-
-  -nav to sections? About - Projects - Contact
--->
-
     <header>
       <div id="logo">
         <div>x</div>
@@ -53,8 +44,7 @@
       </nav>
     </header>
 
-    <!-- 
-   
+    <!--   
   
   -resume pdf link?
 -->
@@ -63,8 +53,8 @@
       <h2 id="about" class="navtitles">about</h2>
 
       <section>
-        <h3>Hi, I'm <span>Sami</span>.</h3>
-        <p>I'm a Berlin based web-developer in training.</p>
+        <h3>Hi, I'm <span>Sami.</span></h3>
+        <p>I'm a Berlin based web-developer <span>in training.</span></p>
         <p>So far I'm getting the hang of:</p>
 
         <div class="skills">
@@ -110,26 +100,110 @@
         </div>
       </section>
 
-      <!-- 
-    -"Some of my work:"
-    -project screenshots 
-  -->
+      <section>
+        <h2 id="projects" class="navtitles">projects</h2>
 
-      <h2 id="projects" class="navtitles">projects</h2>
-      <section id="projects">Projects</section>
+        <h3>Some <span>projects</span> I have made:</h3>
 
-      <!-- 
-    -bottom section with contact form & social media links ex:
-    linkedin 
-    twitter 
-    github 
-    stackoverflow
-    -background of berlin map in form bg?
-  -->
+        <div id="work">
+          <a
+            target="_blank"
+            href="https://friend-shaped.github.io/Unfold-Animation/"
+          >
+            <div class="project" id="project1">
+              <p>Unfold Animation</p>
+            </div>
+          </a>
 
-      <h2 id="contact" class="navtitles">contact</h2>
+          <a
+            target="_blank"
+            href="https://friend-shaped.github.io/fixed-vanishing-header/"
+          >
+            <div class="project" id="project2">
+              <p>Fixed Vanishing Header</p>
+            </div>
+          </a>
 
-      <section id="contact">contact</section>
+          <a
+            target="_blank"
+            href="https://friend-shaped.github.io/nested-grids-doc-layout/"
+          >
+            <div class="project" id="project3">
+              <p>Nested Grids</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 id="contact" class="navtitles">contact</h2>
+        <h3>Keep up with <span>my journey.</span></h3>
+
+        <div class="contact">
+          <form action="https://formspree.io/f/xqkjdrpr" method="POST">
+            <h2>Contact me!</h2>
+            <label for="textarea">Your message</label>
+            <textarea
+              id="textarea"
+              name="message"
+              placeholder="Your message"
+              minlength="1"
+              cols="30"
+              rows="5"
+            ></textarea>
+
+            <label for="text">Your Name</label>
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Your name"
+              minlength="1"
+            />
+
+            <label for="email">Your Email</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              minlength="7"
+            />
+
+            <div id="formbtn">
+              <button type="submit">Send</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+
+          <div class="socMed">
+            <!-- FontAwesome Icons -->
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/FriendShapedDev" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/friend-shaped" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/20315893/friend-shaped" target="_blank">
+                  <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>

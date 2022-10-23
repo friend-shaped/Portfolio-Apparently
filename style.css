@@ -1,13 +1,3 @@
-/* 
-Palette?
-#0d7377
-#ffffff
-#129fa5
-#084749
-#e6e6e6
-#17ccd3
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -20,22 +10,22 @@ Palette?
   --med-grey: #4b545d;
   --brown-grey: #898584;
   --violet: #483d51;
-  --light-violet: #5B4969;
+  --light-violet: #5b4969;
   --light-grey: #9ba2ab;
   --red: #ae4735;
   --white: #f2fcf8;
-  --white-bg: rgba(242,252,248, .3);
+  --white-bg: rgba(242, 252, 248, 0.7);
   --petrol: #328a94;
   --blue: #082638;
-  --blue-bg: rgba(8,38,56, .3);
+  --blue-bg: rgba(8, 38, 56, 0.3);
   --yellow: #f6df51;
-  --green-light: #4D6E4F;
-  --invisible: rgba(255, 255, 255, 0)
+  --green-light: #4d6e4f;
+  --invisible: rgba(255, 255, 255, 0);
 }
 
 html {
   font-size: 62.5%;
-  font-family: arial, 'FontAwesome';
+  font-family: arial, "FontAwesome";
 }
 
 body {
@@ -65,7 +55,6 @@ header {
   border-top-right-radius: 10%;
   margin: 1.5rem;
   white-space: nowrap;
-  
 }
 
 #logo div:first-child {
@@ -93,7 +82,7 @@ nav ul {
   margin: 1.5rem;
 }
 
-nav ul li {
+li {
   list-style-type: none;
   padding-left: 2rem;
 }
@@ -130,119 +119,225 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 
-
-
+/* make fullscreen w scroll for mobile vers? */
 .content {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    width: 80%;
-    height: 50vh;
-    border-radius: 2rem;
-    padding: 4rem;
-    font-size: 1.6rem;
-    background-color: var(--blue-bg);
-    color: var(--white);
-    overflow-y: scroll;
-    scrollbar-width: none; 
-    -ms-overflow-style: none;  
- 
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 50vh;
+  border-radius: 2rem;
+  padding: 4rem;
+  font-size: 1.6rem;
+  background-color: var(--blue-bg);
+  color: var(--white);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.content::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
+.content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
+span {
+  color: var(--petrol);
+  background-color: var(--white-bg);
+  font-weight: 600;
+  padding: 0.2rem;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8em;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  padding-bottom: 2rem;
+}
 
 .navtitles {
-    padding-bottom: 2rem;
-    line-height: 1rem;
-    font-size: 0rem;
-    color: var(--invisible);
-
+  padding-bottom: 2rem;
+  line-height: 1rem;
+  font-size: 0rem;
+  color: var(--invisible);
 }
-
 
 .skills {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
-/* .skills > * {
-    cursor: pointer;
-} */
-
 .button {
-    border-radius: 50%;
-    border-color: var(--black-grey);
-    padding: .5rem;
-    margin: .5rem;
-    height: 6rem;
-    width: 6rem;
-    background-color: var(--petrol);
-    color: var(--white);
-    box-shadow: 2px 2px  rgba(0,0,0,0.6);
-    
+  border-radius: 50%;
+  border-color: var(--black-grey);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--petrol);
+  color: var(--white);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .button:hover,
 .next .button:hover {
-    cursor: default;
+  cursor: default;
 }
 
-.next .button{
-    background-color: var(--med-grey);
+.next .button {
+  background-color: var(--med-grey);
 }
 
 .button p {
-    font-size: 1rem;
-    line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 i {
-    font-size: 2rem;
-    line-height: 2rem;
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+#work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 20rem;
+  width: 30rem;
+  margin: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.project p {
+  background-color: var(--petrol);
+  text-align: center;
+  color: var(--white);
+
+}
+
+#work a {
+  text-decoration: none;
+}
+
+#project1 {
+    background-image: url(./images/unfold-anim-thumb.png);
+}
+
+#project2 {
+    background-image: url(./images/vanishing-head-thumb.png);
+}
+
+#project3 {
+    background-image: url(./images/nested-grids-thumb.png);
 }
 
 
-span {
-    color: var(--petrol);
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* #about,
-#projects,
-#contact {
-    height: 100%;
-    padding-top: 5rem;
-} */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
 
-section {
-    height: 100%;
-    margin-bottom: 3rem;
+label {
+  font-size: 1px;
+  margin-bottom: 1rem;
+}
+
+#textarea,
+.input {
+  background-color: var(--white-bg);
+  color: var(--black);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: 1px solid var(--red);
+}
+
+.formbtn {
+  display: flex;
+}
+
+button[type="submit"] {
+  width: 8rem;
+  margin: 1rem 1rem;
+  background-color: var(--petrol);
+  color: var(--white);
+  border: none;
+}
+
+button[type="reset"] {
+  width: 8rem;
+  margin: 1rem 0;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
 }
 
 
+.socMed ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 2rem;
+}
+
+.socMed ul li a i {
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--light-grey);
+}
+
+.socMed ul li a i:hover {
+  color: var(--petrol);
+}
+
+/* nav breakpoint around 400px */
 
 /* tablet */
-@media screen and (min-width: ) {
-
-
+@media screen and (min-width: 768px) {
 }
 
 /* desktop */
-@media screen (min-width: ) {
-  /* main {
-    display: flex;
-    flex-direction: row;
-  } 
+@media screen and (min-width: 992px) {
 
-
-  
-  
-  */
+    #work {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+      }
 }
+
