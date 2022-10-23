@@ -119,7 +119,6 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 
-/* make fullscreen w scroll for mobile vers? */
 .content {
   position: absolute;
   top: 15%;
@@ -236,15 +235,15 @@ i {
 }
 
 #project1 {
-  background-image: url(./images/unfold-anim-thumb.png);
+  background-image: url(images/unfold-anim-thumb.png);
 }
 
 #project2 {
-  background-image: url(./images/vanishing-head-thumb.png);
+  background-image: url(images/vanishing-head-thumb.png);
 }
 
 #project3 {
-  background-image: url(./images/nested-grids-thumb.png);
+  background-image: url(images/nested-grids-thumb.png);
 }
 
 .contact {
@@ -329,7 +328,7 @@ button[type="reset"] {
   #work {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
     margin-bottom: 5em;
