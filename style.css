@@ -229,7 +229,6 @@ i {
   background-color: var(--petrol);
   text-align: center;
   color: var(--white);
-
 }
 
 #work a {
@@ -237,18 +236,16 @@ i {
 }
 
 #project1 {
-    background-image: url(./images/unfold-anim-thumb.png);
+  background-image: url(./images/unfold-anim-thumb.png);
 }
 
 #project2 {
-    background-image: url(./images/vanishing-head-thumb.png);
+  background-image: url(./images/vanishing-head-thumb.png);
 }
 
 #project3 {
-    background-image: url(./images/nested-grids-thumb.png);
+  background-image: url(./images/nested-grids-thumb.png);
 }
-
-
 
 .contact {
   width: 100%;
@@ -304,7 +301,6 @@ button[type="reset"] {
   border: none;
 }
 
-
 .socMed ul {
   display: flex;
   justify-content: center;
@@ -330,14 +326,12 @@ button[type="reset"] {
 
 /* desktop */
 @media screen and (min-width: 992px) {
-
-    #work {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 5em;
-      }
+  #work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+  }
 }
-
