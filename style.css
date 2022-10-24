@@ -26,6 +26,12 @@ html {
   font-family: arial, "FontAwesome";
 }
 
+header,
+h3,
+.contact h2 {
+  font-family: "IBM Plex Mono", monospace;
+}
+
 body {
   font-size: 1.6rem;
   background-image: url(./images/trainlights.jpg);
@@ -45,7 +51,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "IBM Plex Mono", monospace;
 }
 
 header a {
@@ -153,7 +158,6 @@ nav ul li a:hover::before {
 span {
   color: var(--petrol);
   font-weight: 600;
-  padding: 0.2rem;
 }
 
 section {
@@ -162,7 +166,7 @@ section {
   margin-bottom: 15em;
 }
 
-section:last-child {
+section:last-of-type {
   margin-bottom: 5em;
 }
 
@@ -172,12 +176,11 @@ section p {
 
 h3 {
   padding-bottom: 2rem;
-  font-family: "IBM Plex Mono", monospace;
 }
 
 .navtitles {
   padding-bottom: 5rem;
-  font-size: 0rem;
+  font-size: 1px;
   color: var(--invisible);
 }
 
@@ -185,24 +188,19 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .button {
   border-radius: 50%;
   border-color: var(--black-grey);
-  padding: 0.5rem;
+  padding: 0.8rem;
   margin: 0.5rem;
   height: 6rem;
   width: 6rem;
   background-color: var(--petrol);
   color: var(--white);
   box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
-}
-
-.button:hover,
-.next .button:hover {
-  cursor: default;
 }
 
 .next .button {
@@ -212,6 +210,11 @@ h3 {
 .button p {
   font-size: 1rem;
   line-height: 1rem;
+}
+
+.button:hover,
+.next .button:hover {
+  cursor: default;
 }
 
 i {
@@ -228,7 +231,7 @@ i {
 }
 
 .project {
-  height: 20rem;
+  height: 25rem;
   width: 30rem;
   margin: 1rem;
   background-size: cover;
@@ -239,6 +242,8 @@ i {
   background-color: var(--petrol);
   text-align: center;
   color: var(--white);
+  padding: 0.5rem;
+  font-weight: 600;
 }
 
 #work a {
@@ -258,7 +263,6 @@ i {
 }
 
 .contact {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,7 +270,7 @@ i {
 }
 
 .contact h2 {
-  font-family: "IBM Plex Mono", monospace;
+  font-size: 2rem;
   text-transform: lowercase;
 }
 
@@ -298,31 +302,30 @@ label {
 
 textarea:focus,
 input:focus {
-  outline: 1px solid var(--red);
+  outline: 2px solid var(--yellow);
+  box-shadow: var(--yellow) -2px -2px 20px;
 }
 
 .formbtn {
   display: flex;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="reset"] {
   width: 8rem;
-  margin: 1rem 0;
+  margin: 1rem 0.25rem;
   padding: 1rem;
-  background-color: var(--petrol);
-  color: var(--white);
   border: none;
   font-weight: 700;
+  color: var(--white);
+}
+
+button[type="submit"] {
+  background-color: var(--petrol);
 }
 
 button[type="reset"] {
-  width: 8rem;
-  margin: 1rem 0.5rem;
-  padding: 1rem;
   background-color: var(--red);
-  color: var(--white);
-  border: none;
-  font-weight: 700;
 }
 
 .socMed ul {
@@ -332,13 +335,13 @@ button[type="reset"] {
   margin: 2rem;
 }
 
-.socMed ul li a i {
+.socMed a {
   text-decoration: none;
-  font-size: 3rem;
   color: var(--light-grey);
+  font-size: 3rem;
 }
 
-.socMed ul li a i:hover {
+.socMed a:hover {
   color: var(--petrol);
 }
 
