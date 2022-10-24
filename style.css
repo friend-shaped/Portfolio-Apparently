@@ -167,6 +167,10 @@ section:last-child {
   margin-bottom: 5em;
 }
 
+section p {
+  margin-bottom: 1.5rem;
+}
+
 h3 {
   padding-bottom: 2rem;
   font-family: "IBM Plex Mono", monospace;
