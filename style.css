@@ -132,8 +132,7 @@ nav ul li a:hover::before {
 .content {
   position: absolute;
   top: 15%;
-  left: 10%;
-  width: 80%;
+  width: 100%;
   height: 50vh;
   border-radius: 2rem;
   padding: 4rem;
@@ -345,6 +344,11 @@ button[type="reset"] {
 
   .lnav {
     display: block;
+  }
+
+  .content {
+    left: 10%;
+    width: 80%;
   }
 
   #work {
