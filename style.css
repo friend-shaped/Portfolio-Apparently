@@ -127,6 +127,10 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 
+.snav {
+  font-size: 3rem;
+}
+
 .lnav {
   display: none;
 }
@@ -219,7 +223,7 @@ h3 {
   cursor: default;
 }
 
-i {
+.button i {
   font-size: 2.5rem;
   line-height: 2.5rem;
 }
@@ -345,6 +349,10 @@ button[type="reset"] {
 
 .socMed a:hover {
   color: var(--petrol);
+}
+
+.socMed i {
+  font-size: 3.5rem;
 }
 
 footer {
