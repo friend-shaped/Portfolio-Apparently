@@ -277,6 +277,11 @@ label {
   color: var(--black);
   width: 100%;
   padding: 0.5rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+
 }
 
 textarea:focus,
