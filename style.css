@@ -14,10 +14,10 @@
   --light-grey: #9ba2ab;
   --red: #ae4735;
   --white: #f2fcf8;
-  --white-bg: rgba(242, 252, 248, 0.7);
+  --white-bg: rgba(242, 252, 248, 0.6);
   --petrol: #328a94;
   --blue: #082638;
-  --blue-bg: rgba(8, 38, 56, 0.3);
+  --blue-bg: rgba(8, 38, 56, 0.4);
   --yellow: #f6df51;
   --green-light: #4d6e4f;
   --invisible: rgba(255, 255, 255, 0);
@@ -144,7 +144,7 @@ nav ul li a:hover::before {
 
 span {
   color: var(--petrol);
-  background-color: var(--white-bg);
+  /* background-color: var(--white-bg); */
   font-weight: 600;
   padding: 0.2rem;
 }
@@ -152,11 +152,11 @@ span {
 section {
   width: 100%;
   height: auto;
-  margin-bottom: 10rem;
+  margin-bottom: 15em;
 }
 
 section:last-child {
-  margin-bottom: 0;
+  margin-bottom: 5em;
 }
 
 h3 {
