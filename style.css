@@ -308,6 +308,7 @@ input:focus {
 button[type="submit"] {
   width: 8rem;
   margin: 1rem 0;
+  padding: 1rem;
   background-color: var(--petrol);
   color: var(--white);
   border: none;
@@ -316,7 +317,8 @@ button[type="submit"] {
 
 button[type="reset"] {
   width: 8rem;
-  margin: 1rem 0;
+  margin: 1rem .5rem;
+  padding: 1rem;
   background-color: var(--red);
   color: var(--white);
   border: none;
