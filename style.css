@@ -28,6 +28,7 @@
 html {
   font-size: 62.5%;
   font-family: arial, "FontAwesome";
+  
 }
 
 body {
@@ -338,8 +339,6 @@ button[type="reset"] {
 .socMed ul li a i:hover {
   color: var(--petrol);
 }
-
-/* nav breakpoint around 400px */
 
 /* tablet */
 @media screen and (min-width: 768px) {
